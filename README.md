@@ -13,6 +13,7 @@ Work in Progress, Just for Fun.
 ## Model Details
 
 - Model Name: moeru-ai/Moeru-Llama-3-8B
-- Base Model: meta-llama/Meta-Llama-3-8B
+- Base Model:
+  [meta-llama/Meta-Llama-3-8B](https://huggingface.co/meta-llama/Meta-Llama-3-8B)
 - License: [Apache 2.0](LICENSE)
 - Built with Meta Llama 3: [License](https://llama.meta.com/llama3/license/)
