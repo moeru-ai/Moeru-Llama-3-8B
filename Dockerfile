@@ -8,7 +8,8 @@ RUN git clone https://github.com/OpenAccess-AI-Collective/axolotl.git
 
 WORKDIR /workspace/axolotl
 
-RUN git checkout v0.4.0
+RUN git checkout v0.4.0 && \
+    rm requirements.txt
 
 COPY ./finetune.py /workspace/axolotl/finetune.py
 COPY ./requirements.txt /workspace/axolotl/requirements.txt
