@@ -1,0 +1,11 @@
+# Datasets Dir
+datasets/**
+!datasets/.gitkeep
+
+# Huggingface Cache Dir
+huggingface/**
+!huggingface/.gitkeep
+
+# Output Dir
+out/**
+!out/.gitkeep
