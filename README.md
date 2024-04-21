@@ -1,6 +1,4 @@
-# Moeru-Llama-3-8B
-
-[<img src="https://raw.githubusercontent.com/OpenAccess-AI-Collective/axolotl/main/image/axolotl-badge-web.png" alt="Built with Axolotl" width="200" height="32"/>](lora.yml)
+# Moeru-Llama-3-8B [<img src="https://raw.githubusercontent.com/OpenAccess-AI-Collective/axolotl/main/image/axolotl-badge-web.png" alt="Built with Axolotl" width="200" height="32"/>](lora.yml)
 
 ![cover](cover.jpg)
 
