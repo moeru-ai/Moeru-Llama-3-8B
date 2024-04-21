@@ -25,6 +25,6 @@ RUN pip install --no-cache-dir -e . && \
 #     # helper for huggingface-login cli
 #     git config --global credential.helper store
 
-ENTRYPOINT [ "accelrate", "launch", "finetune.py" ]
+ENTRYPOINT [ "accelerate", "launch", "finetune.py" ]
 
 CMD [ "lora.yml" ]
