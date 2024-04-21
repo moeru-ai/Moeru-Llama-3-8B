@@ -1,50 +1,43 @@
+# This file is copied from https://github.com/OpenAccess-AI-Collective/axolotl/blob/v0.4.0/requirements.txt
 --extra-index-url https://huggingface.github.io/autogptq-index/whl/cu118/
 packaging==23.2
-# peft==0.10.0
 peft==0.5.0
-# transformers @ git+https://github.com/huggingface/transformers.git@43d17c18360ac9c3d3491389328e2fe55fe8f9ce
-# tokenizers==0.15.0
 tokenizers
-bitsandbytes==0.43.0
-# accelerate==0.28.0
+bitsandbytes>=0.41.1
 accelerate==0.23.0
-deepspeed==0.13.1
-pydantic==2.6.3
+deepspeed>=0.13.1
 addict
 fire
 PyYAML>=6.0
-requests
-# datasets==2.15.0
 datasets
-# flash-attn==2.5.5
+#flash-attn==2.3.3
 sentencepiece
 wandb
 einops
-# xformers==0.0.22
-optimum==1.16.2
+#xformers==0.0.22
+optimum==1.13.2
 hf_transfer
 colorama
 numba
 numpy>=1.24.4
+mlflow
 # qlora things
-evaluate==0.4.1
+bert-score==0.3.13
+evaluate==0.4.0
+rouge-score==0.1.2
 scipy
 scikit-learn==1.2.2
 pynvml
 art
-# fschat==0.2.36
 fschat
-# gradio==3.50.2
 gradio>=4.19.2
 tensorboard
 
-mamba-ssm==1.2.0.post1
+mamba-ssm==1.1.1
 
 # remote filesystems
 s3fs
 gcsfs
 # adlfs
 
-trl==0.8.5
-zstandard==0.22.0
-fastcore
+trl>=0.7.9
