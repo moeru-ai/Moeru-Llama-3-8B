@@ -4,7 +4,7 @@ FROM intelanalytics/ipex-llm-xpu:$IPEX_LLM_VERSION
 
 WORKDIR /workspace 
 
-RUN git clone --depth=1 https://github.com/OpenAccess-AI-Collective/axolotl.git
+RUN git clone https://github.com/OpenAccess-AI-Collective/axolotl.git
 
 WORKDIR /workspace/axolotl
 
