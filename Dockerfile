@@ -14,7 +14,7 @@ COPY ./finetune.py /workspace/axolotl/finetune.py
 COPY ./requirements.txt /workspace/axolotl/requirements.txt
 
 # Install requirements
-RUN pip install --no-cache-dir -e . && \
+RUN pip install -e . && \
     pip install transformers==4.36.0
 
 # # So we can test the Docker image
