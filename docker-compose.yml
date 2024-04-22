@@ -8,6 +8,7 @@ services:
     volumes:
       - ./lora.yml:/workspace/axolotl/lora.yml
       - ./datasets/:/workspace/datasets/
+      - ./out/:/workspace/out/
       - ./huggingface/:/root/.cache/huggingface/
     environment:
       - GIT_AUTHOR_NAME=${GIT_AUTHOR_NAME}
