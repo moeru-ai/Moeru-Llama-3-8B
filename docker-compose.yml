@@ -10,6 +10,7 @@ services:
     volumes:
       - ./lora.yml:/workspace/axolotl/lora.yml
       - ./datasets/:/workspace/datasets/
+      - ./models/:/workspace/models/
       - ./out/:/workspace/out/
       - ./huggingface/:/root/.cache/huggingface/
     # environment:

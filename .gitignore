@@ -1,12 +1,16 @@
-# Datasets Dir
+# Datasets
 datasets/**
 !datasets/.gitkeep
+
+# Models
+models/**
+!models/.gitkeep
 
 # Huggingface Cache Dir
 huggingface/*
 !huggingface/accelerate/
 !huggingface/.gitkeep
 
-# Output Dir
+# Output
 out/**
 !out/.gitkeep
