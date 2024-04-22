@@ -14,6 +14,8 @@ services:
       - ./out/:/workspace/out/
       - ./last_run_prepared/:/workspace/last_run_prepared/
       - ./huggingface/:/root/.cache/huggingface/
+      # Axolotl Patch
+      - ./patch/axolotl/data.py:/workspace/axolotl/src/axolotl/utils/data.py
     environment:
       - HF_HUB_OFFLINE=1
     # environment:
