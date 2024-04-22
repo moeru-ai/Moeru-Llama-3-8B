@@ -4,7 +4,8 @@
 # base_model: /workspace/models/llama-3-8b-bnb-4bit
 base_model: /workspace/models/llama-3-8b
 model_type: LlamaForCausalLM
-tokenizer_type: LlamaTokenizer
+# tokenizer_type: LlamaTokenizer
+tokenizer_type: AutoTokenizer
 
 load_in_8bit: false
 load_in_4bit: true
@@ -12,13 +13,16 @@ strict: false
 
 datasets:
   # - path: mhenrichsen/alpaca_2k_test
-  - path: /workspace/datasets/mhenrichsen/alpaca_2k_test/alpaca_2000.parquet
+  - path: /workspace/datasets/alpaca_2k_test/alpaca_2000.parquet
     type: alpaca
 # dataset_prepared_path:
 dataset_prepared_path: /workspace/datasets
 val_set_size: 0.05
 # output_dir: ./lora-out
 output_dir: /workspace/out
+
+# set chat_template
+chat_template: chatml
 
 sequence_len: 4096
 sample_packing: true
@@ -31,6 +35,11 @@ lora_alpha: 16
 lora_dropout: 0.05
 lora_target_linear: true
 lora_fan_in_fan_out:
+
+# try fix
+lora_modules_to_save:
+  - embed_tokens
+  - lm_head
 
 wandb_project:
 wandb_entity:
