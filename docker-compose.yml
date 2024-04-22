@@ -5,6 +5,14 @@ services:
     build: .
     # stdin_open: true # -i
     # tty: true # -t
+
+    privileged: true
+    ipc: host
+    shm_size: 10g
+    ulimits:
+      memlock: -1
+      stack: 67108864
+    
     devices:
       - /dev/dri:/dev/dri
     volumes:
