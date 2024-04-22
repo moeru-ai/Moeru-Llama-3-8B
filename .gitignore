@@ -6,7 +6,11 @@ datasets/**
 models/**
 !models/.gitkeep
 
-# Huggingface Cache Dir
+# Dataset Prepared Path
+last_run_prepared/**
+!last_run_prepared/.gitkeep
+
+# Huggingface Cache
 huggingface/*
 !huggingface/accelerate/
 !huggingface/.gitkeep

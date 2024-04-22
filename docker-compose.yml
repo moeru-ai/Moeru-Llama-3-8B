@@ -12,6 +12,7 @@ services:
       - ./datasets/:/workspace/datasets/
       - ./models/:/workspace/models/
       - ./out/:/workspace/out/
+      - ./last_run_prepared/:/workspace/last_run_prepared/
       - ./huggingface/:/root/.cache/huggingface/
     environment:
       - HF_HUB_OFFLINE=1
