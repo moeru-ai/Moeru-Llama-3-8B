@@ -27,6 +27,10 @@ RUN apt remove -y python3-blinker && \
 #     # helper for huggingface-login cli
 #     git config --global credential.helper store
 
-ENTRYPOINT [ "accelerate", "launch", "finetune.py" ]
+ENTRYPOINT [ "accelerate" ]
 
-CMD [ "lora.yml" ]
+CMD [ "config" ]
+
+# ENTRYPOINT [ "accelerate", "launch", "finetune.py" ]
+
+# CMD [ "lora.yml" ]
