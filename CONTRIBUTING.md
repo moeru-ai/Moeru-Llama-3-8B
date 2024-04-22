@@ -26,3 +26,8 @@ sudo docker compose up -d
 sudo docker compose down
 # podman compose down # if you use podman
 ```
+
+## Useful links
+
+- https://github.com/NousResearch/axolotl-func-calling/blob/main/docs/debugging.md
+- https://openaccess-ai-collective.github.io/axolotl/docs/config.html
