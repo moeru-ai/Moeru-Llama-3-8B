@@ -1,7 +1,8 @@
 # This file is copied from https://github.com/OpenAccess-AI-Collective/axolotl/blob/v0.4.0/examples/llama-2/lora.yml
 # base_model: NousResearch/Llama-2-7b-hf
 # base_model: /workspace/models/Llama-2-7b-hf
-base_model: /workspace/models/llama-3-8b-bnb-4bit
+# base_model: /workspace/models/llama-3-8b-bnb-4bit
+base_model: /workspace/models/llama-3-8b
 model_type: LlamaForCausalLM
 tokenizer_type: LlamaTokenizer
 

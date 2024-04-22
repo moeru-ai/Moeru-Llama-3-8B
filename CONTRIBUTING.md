@@ -11,7 +11,7 @@ of [IPEX-LLM](https://github.com/intel-analytics/ipex-llm) ~~, modified for the
 
 ```bash
 cd models
-git clone https://huggingface.co/unsloth/llama-3-8b-bnb-4bit
+git clone https://huggingface.co/unsloth/llama-3-8b
 
 cd ../datasets
 git clone https://huggingface.co/datasets/mhenrichsen/alpaca_2k_test
