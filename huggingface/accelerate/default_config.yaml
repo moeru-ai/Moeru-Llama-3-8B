@@ -1,10 +1,10 @@
 compute_environment: LOCAL_MACHINE
 debug: false
-distributed_type: "NO"
-downcast_bf16: "no"
-dynamo_config:
-  dynamo_backend: IPEX
+distributed_type: 'NO'
+downcast_bf16: 'no'
 gpu_ids: all
+ipex_config:
+  use_xpu: true
 machine_rank: 0
 main_training_function: main
 mixed_precision: bf16
