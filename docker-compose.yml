@@ -26,10 +26,11 @@ services:
       - ./patch/axolotl/data.py:/workspace/axolotl/src/axolotl/utils/data.py
     environment:
       - HF_HUB_OFFLINE=1
-    # environment:
-    #   - GIT_AUTHOR_NAME=${GIT_AUTHOR_NAME}
-    #   - GIT_AUTHOR_EMAIL=${GIT_AUTHOR_EMAIL}
-    #   - GIT_COMMITTER_NAME=${GIT_COMMITTER_NAME}
-    #   - GIT_COMMITTER_EMAIL=${GIT_COMMITTER_EMAIL}
-      # - WANDB_API_KEY=${WANDB_API_KEY}
+      # temporary fix for https://github.com/intel/compute-runtime/issues/710
+      - NEOReadDebugKeys=1
+      - OverrideGpuAddressSpace=48
+      # use A770
+      - ONEAPI_DEVICE_SELECTOR=level_zero:0
+    # entrypoint: sycl-ls
+    # command: 
     command: launch finetune.py lora.yml
