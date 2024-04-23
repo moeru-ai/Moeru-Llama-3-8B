@@ -6,9 +6,10 @@ services:
     # stdin_open: true # -i
     # tty: true # -t
 
+    network_mode: host
     privileged: true
     ipc: host
-    shm_size: 10g
+    shm_size: 16g
     ulimits:
       memlock: -1
       stack: 67108864
