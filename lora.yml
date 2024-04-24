@@ -1,5 +1,5 @@
 # This file is copied from https://github.com/OpenAccess-AI-Collective/axolotl/blob/v0.4.0/examples/llama-2/lora.yml
-base_model: NousResearch/Llama-2-7b-hf
+base_model: /workspace/models/Llama-2-7b
 model_type: LlamaForCausalLM
 tokenizer_type: LlamaTokenizer
 
@@ -8,11 +8,11 @@ load_in_4bit: true
 strict: false
 
 datasets:
-  - path: mhenrichsen/alpaca_2k_test
+  - path: /workspace/datasets/alpaca_2k_test/alpaca_2000.parquet
     type: alpaca
-dataset_prepared_path:
+dataset_prepared_path: /workspace/last_run_prepared
 val_set_size: 0.05
-output_dir: ./lora-out
+output_dir: /workspace/out
 
 sequence_len: 4096
 sample_packing: true
