@@ -18,7 +18,8 @@ sudo intel_gpu_top -d pci:card=1 # UHD730
 
 ```bash
 cd models
-git clone https://huggingface.co/unsloth/llama-3-8b
+git clone https://huggingface.co/unsloth/llama-2-7b
+# git clone https://huggingface.co/unsloth/llama-3-8b
 
 cd ../datasets
 git clone https://huggingface.co/datasets/mhenrichsen/alpaca_2k_test
